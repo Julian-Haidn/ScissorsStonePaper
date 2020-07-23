@@ -1,0 +1,15 @@
+:root{
+	
+}
+@font-face { 
+	font-family: 'Optimus';
+    src: url('../type/Optimus.otf') format('truetype');
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Optimus';
+}
+html{
+	/*overflow: hidden;*/
+}

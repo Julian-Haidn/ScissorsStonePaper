@@ -1,0 +1,151 @@
+.startScreen{	
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	left: 0px;
+		
+	z-index: 20;
+	transition: 0.8s;
+	background-size: cover;
+	background-position: center center;
+	background-image: url("../img/startScreen/bg.svg");
+}
+
+.startScreen h1,.startScreen h3{
+	position: absolute;
+	width: 100%;
+	top:8%;
+	text-align: center;
+	
+	font-size: 7vw;
+}
+.startScreen h1{
+	color: #F7F7F7;
+	z-index: 26;
+}
+.startScreen h3{
+	color: rgba(0,0,0,0.2); 
+	z-index:25;
+	transform: translateY(15px);
+}
+.startScreen h4{
+	position: absolute;
+	width: 100%;
+	bottom: 4%;
+	text-align: center;
+	
+	color: #F7F7F7;
+	font-size: 3.1vw;
+	
+	z-index: 20;
+	animation: continueAnimation 1s ease-in-out infinite alternate;
+}
+@keyframes continueAnimation{
+	to{
+		transform: scale(0.92);
+	}
+}
+
+#startTrigger{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 21;
+	
+	opacity: 0;
+	transition: 0.9s;
+}
+#startTrigger:hover{
+	cursor: pointer;
+}
+
+.settings{
+	position: absolute;
+	width: 100%;
+	height:45%;
+	top: 35%;
+	
+	z-index: 25;
+}
+
+.inputFrame{
+	position: absolute;
+	margin: auto;
+	display: inline-block;
+	
+	left: 50%;
+	transform: translateX(-50%);
+}
+.inputFrame img{
+	height: 100%;
+}
+#inputFrame1{
+	top: 0px;
+	height: 26.8%;
+}
+#inputFrame2{
+	top:38%;
+	height: 36.8%;
+}
+#inputFrame3{
+	bottom: 0px;
+	height: 18.2%;
+}
+
+.inputFrame input[type=number], .inputFrame input[type=text]{
+	position: absolute;
+	border: none transparent;
+	outline: none;
+	background-color: transparent;
+	color: #F7F7F7;
+	
+	 -moz-appearance: textfield;
+}
+/* - Hide Arrows bei number - */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#input1{
+	left: 40%;
+	top: 17%;
+	font-size: 5.1vh;
+}
+#input2{
+	left: 40%;
+	top: 13%;
+	font-size: 5.1vh;
+}
+#input3{
+	left: 83%;
+	top: 5%;
+	font-size: 5vh;
+}
+.inputFrame input[type=checkbox], inputFrame input[type=checkbox]:active{
+	position: absolute;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	background-color: transparent;
+	border: none;
+	
+	padding: 2px;
+	top: 76.9%;
+	left: 70%;
+	width: 1.1vh;
+	height: 1.1vh;
+	outline: 0.4vw #822F19 solid;
+	
+	transition: 0.2s;
+}
+
+.inputFrame input[type=checkbox]:checked{
+	background-color: #822F19;
+	
+}
+.inputFrame input[type=checkbox]:hover{
+	outline: 0.4vw #C64228 solid;
+	cursor: pointer;
+}
